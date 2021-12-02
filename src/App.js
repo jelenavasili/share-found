@@ -3,7 +3,6 @@ import Header from "./Header";
 import Info from "./Info";
 import Nav from "./Nav";
 
-/*comment*/
 const App = () => {
   return (
     <div>
