@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 import Header from "./Header";
 import Info from "./Info";
 import Nav from "./Nav";
@@ -10,6 +11,7 @@ const App = () => {
       <Nav />
       <Header />
       <Info />
+      <Footer />
     </div>
   );
 };

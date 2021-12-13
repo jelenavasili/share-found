@@ -3,8 +3,10 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div>
-      <img src={logo} alt="logo" />
+    <div className="footer">
+      <a href="https://www.sharefoundation.info/sr/o-nama">
+        <img src={logo} width="240" alt="logo" />
+      </a>
     </div>
   );
 };
