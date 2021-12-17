@@ -106,7 +106,7 @@ a {
 
 .rep-email::before {
   content: "";
-  background-image: url(images/email@2x.png);
+  background-image: url(../../assets/images/email@2x.png);
   background-repeat: no-repeat;
   width: 24px;
   height: 19px;
@@ -117,7 +117,7 @@ a {
 .company-hq::before,
 .rep-hq::before {
   content: "";
-  background-image: url(images/Location@2x.png);
+  background-image: url(../../assets/images/Location@2x.png);
   background-repeat: no-repeat;
   width: 20px;
   height: 19px;
