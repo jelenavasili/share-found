@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import Info from "./components/Cards/Info";
+import Card from "./components/Cards/Card";
 import Nav from "./components/Nav/Nav";
 
 /*comment*/
@@ -10,7 +10,7 @@ const App = () => {
     <div>
       <Nav />
       <Header />
-      <Info />
+      <Card />
       <Footer />
     </div>
   );
