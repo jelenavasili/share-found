@@ -1,4 +1,8 @@
 const CardContent = ({ info }) => {
+  const emailWithLineBreak = (info["Mejl predstavnika"] &&
+    info["Mejl predstavnika"].length > 30) ?
+    info["Mejl predstavnika"].replace('@', '<wbr>@') :
+    info["Mejl predstavnika"];
   return (
     <div className="section">
       <div className="service">
@@ -28,8 +32,8 @@ const CardContent = ({ info }) => {
           <>
             <a href="#">{info.Predstavnik}</a>
             <p className="rep-hq">{info["Adresa predstavnika"]}</p>
-            <a href="" className="rep-email">
-              {info["Mejl predstavnika"]}
+            <a href="" className="rep-email"
+               dangerouslySetInnerHTML={emailWithLineBreak} >
             </a>
           </>
         ) : (
