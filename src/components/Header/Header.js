@@ -1,6 +1,6 @@
 import "./Header.css";
 
-const Header = () => {
+const Header = ({lang}) => {
   return (
     <div className="header">
       <h1>PREDSTAVNICI</h1>

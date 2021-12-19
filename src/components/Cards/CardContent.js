@@ -1,4 +1,4 @@
-const CardContent = ({ info }) => {
+const CardContent = ({ lang, info }) => {
   const emailWithLineBreak =
     info["Mejl predstavnika"] && info["Mejl predstavnika"].length > 30
       ? info["Mejl predstavnika"].replace("@", "<wbr>@")
@@ -8,10 +8,10 @@ const CardContent = ({ info }) => {
       <div className="service">
         <div className="logos">
           {info.logo &&
-            info.logo.map((img) => (
+            info.logo.map((img, key) => (
               <img
                 className={!info.Predstavnik ? "filter-grey" : ""}
-                src={img}
+                src={img} key={key}
                 alt="logo"
               />
             ))}
@@ -20,7 +20,7 @@ const CardContent = ({ info }) => {
           <span className="service-links">{info["Onlajn servis"]}</span>
         </div>
         <div>
-          <h3>KOMPANIJA</h3>
+          <h3>{lang === 'en' ? "COMPANY" : "KOMPANIJA"}</h3>
           <p>{info["Pravno lice"]}</p>
           <p className="company-hq">{info["Sedište pravnog lica"]}</p>
         </div>
