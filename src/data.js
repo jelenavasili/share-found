@@ -83,7 +83,7 @@ const data = [
     "Pravno lice": "CorvusInfo d.o.o. ",
     "Sedište pravnog lica": "Zagreb, Hrvatska",
     Predstavnik: "Nataša Pepić",
-    "Adresa predstavnika": "",
+    //"Adresa predstavnika": "",
     "Mejl predstavnika": "zastitnik@kimtec.rs",
   },
   {
