@@ -3,11 +3,11 @@ import "./Card.css";
 import data from "../../data";
 import CardContent from "./CardContent";
 
-const Card = ({lang}) => {
+const Card = () => {
   return (
     <div className="main">
       {data.map((obj, key) => (
-        <CardContent key={key} info={obj} lang={lang} />
+        <CardContent key={key} info={obj} />
       ))}
     </div>
   );

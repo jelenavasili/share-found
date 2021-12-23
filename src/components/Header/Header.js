@@ -1,6 +1,6 @@
 import "./Header.css";
 
-const Header = ({lang}) => {
+const Header = () => {
   return (
     <div className="header">
       <h1>PREDSTAVNICI</h1>
@@ -20,7 +20,7 @@ const Header = ({lang}) => {
       <p>
         SHARE Fondacija je u maju 2019, pre početka primene novog zakona,
         pozvala 20 velikih kompanija da izvrše ovu obavezu i imenuju svoje
-        predstavnike u Srbiji. Nakon imenovanja predstavnika kompanije "Google"
+        predstavnike u Srbiji. Nakon imenovanja predstavnika kompanije 'Google'
         u Srbiji, zabeležen je prvi uspešan slučaj ostvarivanja prava na
         zaborav. Protiv onih koji nisu ispunile obaveze po našem zakon, podnete
         su prekršajne prijave.
