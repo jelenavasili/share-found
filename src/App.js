@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Card from "./components/Cards/Card";
@@ -7,17 +7,13 @@ import "./translations/i18n";
 
 /*comment*/
 const App = () => {
-  const [language, setLanguage] = useState("en");
-
-  useEffect(() => {
-    const lang = localStorage.getItem("i18nextLng");
-    if (lang) {
-      setLanguage(lang);
-    }
-  }, []);
+  const [language, setLanguage] = useState("sr");
+  const onLanguageChange = (lang) => {
+    setLanguage(lang);
+  };
   return (
     <div>
-      <Nav />
+      <Nav onLanguageChange={onLanguageChange} />
       <Header />
       <Card language={language} />
       <Footer />

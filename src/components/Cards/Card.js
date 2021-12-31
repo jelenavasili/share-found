@@ -1,19 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Card.css";
 import data from "../../data";
 import CardContent from "./CardContent";
 import data_en from "../../data_en";
-import i18next from "i18next";
 
 const Card = ({ language }) => {
-  // const [language, setLanguage] = useState("en");
-
-  // useEffect(() => {
-  //   const lang = localStorage.getItem("i18nextLng");
-  //   if (lang) {
-  //     setLanguage(lang);
-  //   }
-  // }, []);
   return (
     <div className="main">
       {language === "sr"

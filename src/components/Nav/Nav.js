@@ -5,9 +5,10 @@ import "../Cards/Card.js";
 import "../../translations/i18n.js";
 import i18n from "i18next";
 
-const Nav = () => {
+const Nav = ({ onLanguageChange }) => {
   const handleOnclick = (lang) => {
     i18n.changeLanguage(lang);
+    onLanguageChange(lang);
   };
 
   return (
