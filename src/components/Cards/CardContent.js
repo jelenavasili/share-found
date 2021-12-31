@@ -1,4 +1,10 @@
+import React from "react";
+import { useTranslation } from "react-i18next";
+import "../../translations/i18n";
+
 const CardContent = ({ info }) => {
+  const { t } = useTranslation();
+
   const emailWithLineBreak =
     info["Mejl predstavnika"] && info["Mejl predstavnika"].length > 30
       ? info["Mejl predstavnika"].replace("@", "<wbr>@")
@@ -21,14 +27,14 @@ const CardContent = ({ info }) => {
           <span className="service-links">{info["Onlajn servis"]}</span>
         </div>
         <div>
-          <h3>KOMPANIJA</h3>
+          <h3>{t("cardContent_h3")}</h3>
           <p>{info["Pravno lice"]}</p>
           <p className="company-hq">{info["Sedište pravnog lica"]}</p>
         </div>
       </div>
 
       <div className={info.Predstavnik ? "rep" : "no-rep"}>
-        <h3>PREDSTAVNIK</h3>
+        <h3>{t("cardContent_h3_below")}</h3>
         {info.Predstavnik ? (
           <>
             <a href="#">{info.Predstavnik}</a>

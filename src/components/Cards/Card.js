@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Card.css";
 import data from "../../data";
 import CardContent from "./CardContent";
+import data_en from "../../data_en";
+import i18next from "i18next";
 
-const Card = () => {
+const Card = ({ language }) => {
+  // const [language, setLanguage] = useState("en");
+
+  // useEffect(() => {
+  //   const lang = localStorage.getItem("i18nextLng");
+  //   if (lang) {
+  //     setLanguage(lang);
+  //   }
+  // }, []);
   return (
     <div className="main">
-      {data.map((obj, key) => (
-        <CardContent key={key} info={obj} />
-      ))}
+      {language === "sr"
+        ? data.map((obj, key) => <CardContent key={key} info={obj} />)
+        : data_en.map((obj, key) => <CardContent key={key} info={obj} />)}
     </div>
   );
 };
