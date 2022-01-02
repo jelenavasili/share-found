@@ -1,5 +1,9 @@
+@font-face {
+  font-family: "Foundry";
+  src: url("../../assets/fonts/FoundryNewRegularCE.ttf");
+}
+
 .container {
-  width: 100%;
   line-height: 60px; /* Vertically center the text there */
   padding-top: 10px;
   padding-right: 30px;
@@ -9,13 +13,33 @@
 }
 
 @media (max-width: 768px) {
-  nav .lang-link {
+  /* nav .lang-link {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-  }
+  } */
 }
 @media (max-width: 550px) {
   nav .container {
     padding-right: 20px;
   }
+  /* // nav .lang-link {
+    padding-left: 0.4rem;
+    padding-right: 0rem;
+    font-size: 14px;
+  } */
+}
+.lang-link {
+  cursor: pointer;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Foundry;
+  font-size: 16px;
+  border: none;
+  background-color: #1b1a18;
+  color: white;
+}
+.lang-links {
+  display: block;
 }

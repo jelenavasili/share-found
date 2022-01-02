@@ -13,11 +13,17 @@ const Nav = ({ onLanguageChange }) => {
 
   return (
     <div className="container">
-      <button onClick={() => handleOnclick("sr")}>sr</button>
-      <button onClick={() => handleOnclick("en")}>en</button>
       <a href="https://www.sharefoundation.info/sr/o-nama/">
         <img src={logo} width="240" alt="Logo" />
       </a>
+      <div className="lang-links">
+        <button className="lang-link" onClick={() => handleOnclick("sr")}>
+          sr
+        </button>
+        <button className="lang-link" onClick={() => handleOnclick("en")}>
+          en
+        </button>
+      </div>
     </div>
   );
 };

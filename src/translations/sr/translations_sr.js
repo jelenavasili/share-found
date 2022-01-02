@@ -2,7 +2,7 @@ export const translations_sr = {
   title: "PREDSTAVNICI",
   heading: "Zahtevaj svoja prava, zaštiti svoje podatke",
   paragraph_1:
-    "Ovde se mogu naći kontakti predstavnika stranih kompanija u Srbiji, kojima se građani mogu obratitida ostvare svoja zakonska prava kao što su pristup, brisanje, prenos i druga prava u odnosu na lične podatke",
+    "Ovde se mogu naći kontakti predstavnika stranih kompanija u Srbiji, kojima se građani mogu obratiti da ostvare svoja zakonska prava kao što su pristup, brisanje, prenos i druga prava u odnosu na lične podatke.",
   paragraph_2:
     " Strane kompanije koje prikupljaju podatke građana Srbije, dužne su da imenuju predstavnike u našoj zemlji kojima se građani mogu obratiti da bi ostvarili svoja prava. Ta obaveza je na snazi od avgusta 2019. godine, kada je počela primena novog Zakona o zaštiti podataka o ličnosti.",
   paragraph_3:
