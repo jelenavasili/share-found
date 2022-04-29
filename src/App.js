@@ -1,14 +1,21 @@
-import React from "react";
-import Header from "./Header";
-import Info from "./Info";
-import Nav from "./Nav";
+import React, { useState } from "react";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Card from "./components/Cards/Card";
+import Nav from "./components/Nav/Nav";
+import "./translations/i18n";
 
 const App = () => {
+  const [language, setLanguage] = useState("sr");
+  const onLanguageChange = (lang) => {
+    setLanguage(lang);
+  };
   return (
     <div>
-      <Nav />
+      <Nav onLanguageChange={onLanguageChange} />
       <Header />
-      <Info />
+      <Card language={language} />
+      <Footer />
     </div>
   );
 };

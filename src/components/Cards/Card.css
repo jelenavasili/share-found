@@ -1,0 +1,139 @@
+.cards {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+  border-radius: 20px;
+}
+.service {
+  padding: 30px;
+  height: 202px;
+}
+a:hover {
+  text-decoration: underline;
+}
+.service-links {
+  margin-top: 13px;
+}
+.rep,
+.no-rep {
+  border-radius: 20px;
+  padding: 30px;
+}
+.no-rep {
+  background: #f2f2f2;
+}
+.rep {
+  background: #d6f0ff;
+  height: 157px;
+}
+.rep h3 {
+  color: #0967b0 !important;
+}
+.rep h3 + a > p,
+.rep h3 + p {
+  margin-bottom: 25px;
+}
+.section h3 {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-family: Foundry;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.6;
+}
+.section > div > h3:first-child {
+  margin-top: 0;
+}
+body {
+  margin: 0;
+  background-color: #1b75bb;
+  font-family: Roboto;
+}
+p {
+  margin: 0;
+}
+.main {
+  margin: 0 25px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 315px);
+  grid-gap: 20px;
+  justify-content: center;
+}
+@media (max-width: 550px) {
+  .main {
+    display: block;
+    width: auto;
+    margin: 0 20px 30px;
+  }
+  .section {
+    display: block;
+    margin: 0 auto 20px;
+    width: 315px;
+  }
+}
+.section {
+  align-self: start;
+  background: #ffffff;
+  /* card */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+  border-radius: 20px;
+}
+.logos img {
+  height: 30px;
+  margin-right: 7px;
+}
+.logos {
+  margin-bottom: 13px;
+  display: flex;
+}
+.company-hq {
+  margin-top: 25px;
+}
+a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+  text-decoration: none;
+  color: black;
+}
+.rep-hq {
+  margin-top: 25px;
+}
+
+.rep-email::before {
+  content: "";
+  background-image: url(../../assets/images/email@2x.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 19px;
+  display: inline-block;
+  background-size: contain;
+  transform: translateY(3px);
+}
+.company-hq::before,
+.rep-hq::before {
+  content: "";
+  background-image: url(../../assets/images/Location@2x.png);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 19px;
+  display: inline-block;
+  background-size: contain;
+  transform: translateY(1px);
+}
+img {
+  background-repeat: no-repeat;
+  height: 49px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.filter-grey {
+  filter: grayscale(100%);
+}
+.no-rep {
+  background: #f2f2f2;
+}
