@@ -5,7 +5,6 @@ import Card from "./components/Cards/Card";
 import Nav from "./components/Nav/Nav";
 import "./translations/i18n";
 
-/*comment*/
 const App = () => {
   const [language, setLanguage] = useState("sr");
   const onLanguageChange = (lang) => {
