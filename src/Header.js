@@ -1,6 +1,8 @@
+import "./Header.css";
+
 const Header = () => {
   return (
-    <div>
+    <div className="header">
       <h1>PREDSTAVNICI</h1>
       <h2>Zahtevaj svoja prava, zaštiti svoje podatke</h2>
       <p>

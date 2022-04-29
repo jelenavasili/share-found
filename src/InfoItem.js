@@ -1,20 +1,35 @@
-//import acer from "./logos/acer.png";
-
 const InfoItem = ({ info }) => {
   return (
-    <div className="cards section">
+    <div className="section">
       <div className="service">
-        <img src={info.logo} alt="logo" />
-        <span>{info["Onlajn servis"]}</span>
-        <h3>KOMPANIJA</h3>
-        <p>{info["Pravno lice"]}</p>
-        <p>{info["Sedište pravnog lica"]}</p>
+        <div className="logos">
+          {info.logo && info.logo.map((img) => <img src={img} alt="logo" />)}
+        </div>
+        <div>
+          <span className="service-links">{info["Onlajn servis"]}</span>
+        </div>
+        <div>
+          <h3>KOMPANIJA</h3>
+          <p>{info["Pravno lice"]}</p>
+          <p className="company-hq">{info["Sedište pravnog lica"]}</p>
+        </div>
       </div>
       <div className="rep">
         <h3>PREDSTAVNIK</h3>
-        <p>{info.Predstavnik}</p>
-        <p>{info["Adresa predstavnika"]}</p>
-        <a>{info["Mejl predstavnika"]}</a>
+        {info.Predstavnik ? (
+          <>
+            <a href="">{info.Predstavnik}</a>
+            <p className="rep-hq">{info["Adresa predstavnika"]}</p>
+            <a href="" className="rep-email">
+              {info["Mejl predstavnika"]}
+            </a>
+          </>
+        ) : (
+          <>
+            <img src="logos/no-rep.png" />
+            <p>Nema predstavnika</p>
+          </>
+        )}
       </div>
     </div>
   );

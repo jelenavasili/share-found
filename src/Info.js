@@ -5,11 +5,11 @@ import InfoItem from "./InfoItem";
 
 const Info = () => {
   return (
-    <main id="cards">
+    <div className="main">
       {data.map((obj, key) => {
         return <InfoItem key={key} info={obj} />;
       })}
-    </main>
+    </div>
   );
 };
 
